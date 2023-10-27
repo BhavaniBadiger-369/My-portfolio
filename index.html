@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRFlQj6oH-y9ytunSMbMkIAgBPNUF2fo07yw&usqp=CAU" />
+</head>
+
+<body>
+  <!-- header  -->
+
+  <header class="header">
+    <div class="logo">
+      <img
+        src="data:image/png;base64,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"
+        alt="logo-icon" />
+
+      <b> &nbsp; Portfolio</b>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav-links">
+        <li>About Me</li>
+        <li>Skills</li>
+        <li>Certifications</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- banner -->
+
+  <section class="banner">
+    <div class="details">
+      <p class="t1">My name is ,</p>
+      <p class="t2">Bhavani Badiger</p>
+      <p class="desc">
+        Actively seeking job on Software Development | Java Full Stack
+        Developer | Ex-KPITian | DesignEngineer
+      </p>
+
+      <!-- <button class="btn">Contact Me</button> -->
+    </div>
+
+    <div class="person">
+      <img src="./images/person.jpg" alt="photo" />
+    </div>
+  </section>
+
+  <!-- Skills  -->
+
+  <section class="skill-section">
+    <h1>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Technical Skills
+    </h1>
+
+
+    <div class="skills">
+      <div class="skill-set">
+        <i class="fa-solid fa-database" id="icon1"></i>
+        <h3>SQL DataBase</h3>
+        <ul>
+          <li>Adept at DBMS and RDBMS concepts</li>
+          <li>
+            Extensive knowledge on 5 sub language such as DDL,DML,DCL,TCL,DQL
+          </li>
+          <li>Proficiency in SQL Functions and Joins</li>
+          <li>A robust understanding of CRUD operations</li>
+          <li>Proficient in crafting SQL queries and sub-queries</li>
+          <li>Command on Oracle and MySQL WorkBench</li>
+          <li>
+            Excellent understanding of SQL Database Principles and Structures
+          </li>
+        </ul>
+      </div>
+      <div class="skill-set">
+        <i class="fa-brands fa-java" id="icon1"></i>
+        <h3>CoreJava</h3>
+        <ul>
+          <li>Expertise in core concepts of Oops</li>
+          <li>
+            such as Inheritance, Polymorphism, Abstraction, Encapsulation
+          </li>
+          <li>Mastery in Method-overloading and Method-overriding</li>
+          <li>Strong Knowledge on datatypes,variables,Methods,Object</li>
+          <li>Proficiency in Constructors and Arrays</li>
+          <li>Good knowledge on Type Casting and Collection</li>
+          <li>familiarity with Exception handling and File handling</li>
+        </ul>
+      </div>
+      <div class="skill-set">
+        <i class="fa-solid fa-laptop-code" id="icon1"></i>
+        <h3>WebTechnology</h3>
+        <ul>
+          <li>Mastery in HTML5</li>
+          <li>skillfulness in CSS3</li>
+          <li>Building websites with HTML5, CSS and Bootstrap coding</li>
+          <li>Foundational understanding of JavaScript</li>
+          <li>Acquainted with the Bootstrap Framework</li>
+        </ul>
+      </div>
+      <div class="skill-set">
+        <i class="fa-brands fa-java" id="icon1"></i>
+        <h3>Advanced Java</h3>
+        <ul>
+          <li>Expertise in below technologies ,</li>
+          <li>JDBC,</li>
+          <li>Hibernate,</li>
+          <li>Servlets,</li>
+          <li>SpringMVC and SpringBoot</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- certifications -->
+  <section class="certificate">
+    <h1>Certifications</h1>
+    <br />
+    <ul class="certificate-lists">
+      <li>
+        Java Full Stack Development From Jspiders Training and Development
+        centre
+      </li>
+      <li>HTML5 and CSS zero to hero from LetsUpgrade</li>
+      <li>JavaScript zero to hero from LetsUpgrade</li>
+      <li>Java zero to hero from LetsUpgrade</li>
+    </ul>
+  </section>
+
+  <!-- projects -->
+  <section class="projects">
+    <h1>Projects</h1>
+    <br />
+    <ul class="project-lists">
+      <li>
+        Student management System
+        <p>Student Management System Using Servlets and JSP Technologies</p>
+      </li>
+
+      <li>
+        Job-Portal
+        <p>
+          Job-Portal is an API used to build Job-Portal Applications ||
+          technologies used SpringBoot, Spring Data JPA, Swagger
+        </p>
+      </li>
+      <li>
+        Ajio Shopping Website
+        <p>
+          Built AJIO Shopping Website replica using HTML5 , CSS and BootStrap
+          Framework Technologies
+        </p>
+      </li>
+      <li>
+        Restaurant theme website design
+        <p>
+          Created Restaurant Brundhavana website using my own ideas with knowledge of HTML5, CSS3 and Bootstrap
+          technologies
+
+        </p>
+      </li>
+      <li>
+        Employee Management System
+        <p>Employee Management System Using Servlets and JSP Technologies</p>
+      </li>
+      <li>
+        Experimental Investigation on the performance of a CI Engine using
+        waste cooking oil and palm oil as a biodiesel
+      </li>
+      <li>
+        INTERNSHIP - Weight Analysis and Force Analysis on Pneumatic Cylinders
+      </li>
+    </ul>
+
+  </section>
+
+  <!-- footer  -->
+  <section class="footer">
+
+    <ul class="contact-lists">
+      <div class="contact1">
+
+        <li class="btn">Contact Me</li>
+        <li><i class="fa-solid fa-phone">&nbsp;</i> 8217514212</li>
+        <li><i class="fa-solid fa-envelope"></i>&nbsp;</i> bhavanibadiger369@gmail.com</li>
+      </div>
+      <div class="contact2">
+        <li class="btn">Social Media Links</li>
+        <li><i class="fa-brands fa-linkedin">&nbsp;</i><a
+            href="https://www.linkedin.com/in/bhavani-laxmikant-badiger-7a0902267" target="_blank">LinkedIn</a> </li>
+        <li><i class="fa-brands fa-github">&nbsp;</i> <a href="https://github.com/BhavaniBadiger-369"
+            target="_blank">GitHub</a></li>
+      </div>
+    </ul>
+  </section>
+
+</body>
+
+</html>
